@@ -1,2 +1,3 @@
 # Weather-Website
-Creating the weather website with help API
+In this repoository we are gonna create the weather website using weather api which tell us about the weather of a particular city
+and also gave us additional info of the city .........
