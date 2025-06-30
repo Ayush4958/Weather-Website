@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website :- </title>
+</head>
+<link rel="stylesheet" href="main.css">
+
+<body>
+    <header>
+        <form action="#">
+            <h1>WEATHER APP</h1>
+            <input type="text" id="place" placeholder="Enter a City....." name="=place">
+    </header>
+
+    <section>
+
+        <aside id="left-section">
+
+            <div id="location">
+                <p class="head">📍Location:- </p>
+                <p id="place-details"></p>
+            </div>
+
+            <div id="temp">
+                <p class="head">🌡️Temperature :- </p>
+                <p id="temp-value"></p>
+            </div>
+
+            <div id="humd">
+                <p class="head">☁️Humdity :- </p>
+                <p id="humd-value"></p>
+            </div>
+
+            <div id="cond">
+                <p class="head">☁️Condition :- </p>
+                <p id="cond-value"></p>
+            </div>
+
+            <div id="wind">
+                <p class="head">💨Wind-speed :- </p>
+                <p id="wind-value"></p>
+            </div>
+
+        </aside>
+
+        <aside id="right-section">
+
+            <span>
+                <img src="" id="temp-img">
+            </span>
+
+            <span>
+                <img src="" id="loc-img" >
+            </span>
+
+        </aside>
+    </section>
+
+    <footer>
+        <input type="submit" id="submit" value="SUBMIT">
+        <p id="err"></p>
+    </footer>
+
+    </form>
+</body>
+<script src="script.js"></script>
+
+</html>

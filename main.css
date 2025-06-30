@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 50px;
+    margin: 40px 200px;
+    background: #c5bfbf;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    margin: 13px 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 6px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header input {
+    width: 400px;
+    height: 25px;
+    text-align: center;
+    background-color: #212121;
+    border: 2px solid rgb(75, 75, 75);
+    border-radius: 25px;
+    padding: 2px 2px;
+    font-size: 1.2rem;
+    color: rgb(172, 232, 182);
+}
+
+header input:focus {
+    color: rgb(172, 232, 182);
+    background-color: #212121;
+    outline-color: rgb(99, 114, 114);
+    box-shadow: -4px -6px 15px rgb(99, 114, 114);
+    transition: .3s;
+    transition-property: box-shadow;
+}
+
+header input::placeholder {
+    text-align: center;
+}
+
+section {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin: 6px 30px;
+    padding: 4px 18px;
+}
+
+#left-section {
+    font-size: 1.15rem;
+}
+
+#left-section div {
+    color: rgb(42, 38, 38);
+}
+
+#left-section .head {
+    color: black;
+    font-weight: bold;
+}
+
+#right-section {
+    padding: 10px 15px;
+}
+
+#right-section img {
+    height: 150px;
+}
+
+footer {
+    margin: 5px 4px;
+    padding: 2px 8px;
+    text-align: center;
+}
+
+footer #submit {
+    margin: 3px 4px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+footer #submit:active {
+    scale: 0.92;
+}
+
+footer #submit:hover {
+    background: rgb(62, 66, 73);
+    background: linear-gradient(270deg, rgba(57, 59, 63, 0.681) 0%, rgba(121, 126, 127, 0.873) 60%);
+    color: rgb(0, 0, 22);
+}
