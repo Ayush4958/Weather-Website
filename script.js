@@ -55,8 +55,8 @@ async function getWeather() {
     }
 }
 
-// FUnction for getting the location img from API
-// Roight now its on pending because of API error i will change the API and make it work
+// Function for getting the location img from API
+// Right now its on pending because of API error i will change the API and make it work
 async function getlocimg() {
     const city1 = input.value.toLowerCase().replace(/\s+/g, '-');
     const url2 = `https://api.teleport.org/api/urban_areas/slug:${city1}/images/`;
