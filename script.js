@@ -32,7 +32,7 @@ async function getWeather() {
     }
 
     const apiKey = "5882970905084b73b36205334252806";
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
     try {
         let res = await fetch(url)
@@ -43,7 +43,7 @@ async function getWeather() {
         let data = await res.json()
 
         // Entering the data from API inside HTML
-        place.innerHTML = `City:- ${data.location.name}  Country:- ${data.location.country}`
+        place.innerHTML = `City:- ${data.location.name},  Country:- ${data.location.country}`
         temp.innerHTML = `${data.current.temp_c}°C`
         humidity.innerHTML = `${data.current.humidity}%`
         condition.innerHTML = `${data.current.condition.text}`
@@ -55,7 +55,7 @@ async function getWeather() {
     }
 }
 
-// Function for getting the location img from API
+// Fnction for getting the location img from API
 // Right now its on pending because of API error i will change the API and make it work
 async function getlocimg() {
     const city1 = input.value.toLowerCase().replace(/\s+/g, '-');
